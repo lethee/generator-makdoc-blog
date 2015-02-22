@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Meta }}
+  <title>{{{-find '-not-empty?' (-array title package.title)}}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="/modernizr/modernizr.js"></script>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .sean-navbar {
+    margin-top: 1em;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row col-xs-6 col-xs-offset-3">
+      <nav class="navbar navbar-default sean-navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <span class="navbar-brand"><a href="/">Powered by <b>Makdoc</b></a></span></a>
+          </div>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://twitter.com/">Tweets</a></li>
+              <li><a href="https://github.com/">Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        {{{contents}}}
+      </div>
+      <div class="container-fluid">
+        <div>
+          <p class="text-right small">powered by <a href="http://pages.github.com/">GitHub</a>, <a href="http://github.com/pismute/gulp-makdoc">MakDoc</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

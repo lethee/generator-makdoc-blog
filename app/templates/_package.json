@@ -1,0 +1,9 @@
+{
+  "title": "Powered by MakDoc",
+  "name": "makdoc-blog",
+  "version": "0.1.0",
+  "dependencies": {
+    "gulp": "3.8",
+    "gulp-makdoc": "git://github.com/pismute/gulp-makdoc.git"
+  }
+}

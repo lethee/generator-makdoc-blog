@@ -1,0 +1,6 @@
+{{#each (-take 10 docs)}}
+<article>
+  <h4><a class="index-article-title" href="{{{this.uri}}}">{{{this.title}}}</a></h4>
+  <p>{{{_summary this.contentsWithoutLayouts}}} <a class="btn btn-default small" href="{{{this.uri}}}">Read more &raquo;</a></p>
+</article>
+{{/each}}
